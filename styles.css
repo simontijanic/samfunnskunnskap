@@ -14,6 +14,43 @@ section {
 
 }
 
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 10vh;
+}
+
+.navbar .right {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    align-items: center;
+    width: 50%;
+    padding-right: 2em;
+}
+.navbar .right a  {
+    font-family: "Libre Baskerville", serif;
+    font-weight: 600;
+    font-style: normal;
+    list-style-type: none;
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.626);
+}
+.navbar .right a .active  {
+    color: rgb(0, 0, 0);
+}
+.navbar .right a:hover {
+    transition: all 0.5s;
+    color: black;
+}
+
+
+.navbar .left {
+    padding-left: 2em;
+}
+
 header {
     margin-top: 5em;
     width: 100%;
@@ -45,6 +82,7 @@ header h2 {
     display: flex;
     align-items:flex-end;
     flex-direction: column;
+    text-align: left;
     gap: 1em;
 
     font-family: "Source Code Pro", monospace;
@@ -88,6 +126,34 @@ header h2 {
 }
 .pop-up h1 {
     color: rgb(0, 0, 0);
+}
+.articles {
+    width: 100%;
+
+    display: flex;
+    align-items:flex-end;
+    flex-direction: column;
+    gap: 1em;
+
+    font-family: "Source Code Pro", monospace;
+    font-weight: 400;
+    font-size: 1.5em;
+}
+.articles ul li  {
+    font-family: "Libre Baskerville", serif;
+    font-weight: 600;
+    font-style: normal;
+    list-style-type: none;
+    padding-bottom: 1em;
+    font-size: 1.2em;
+}
+.articles ul li a {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.644);
+}
+.articles ul li a:hover {
+    transition: all 0.5s;
+    color: black;
 }
 
 footer {
