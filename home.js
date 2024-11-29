@@ -27,4 +27,5 @@ fetch('/html/')
   })
   .catch(error => {
     console.error('Error fetching the HTML directory:', error);
-  });
+ });
+

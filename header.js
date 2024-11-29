@@ -47,6 +47,11 @@ document.addEventListener('DOMContentLoaded', function() {
             });
           });
       });
+
+      document.querySelector('.begreper h1').addEventListener('click', () => {
+          const container = document.querySelector('.begreper-container');
+          container.style.display = container.style.display === 'flex' ? 'none' : 'flex';
+      });      
   });
 
 
